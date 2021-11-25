@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shar_poh/feature/app/pages/post_detail_page.dart';
 import 'package:shar_poh/feature/app/widgets/post_item.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,12 +22,19 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: ListView.builder(
-        padding: const EdgeInsets.all(14.0),
-        itemCount: 30,
-        itemBuilder: (_, index) => const Padding(
-          padding: EdgeInsets.only(bottom: 14.0),
-          child: PostItem(),
+        padding: const EdgeInsets.all(14),
+        itemBuilder: (_, index) => Padding(
+          padding: const EdgeInsets.only(bottom: 14.0),
+          child: PostItem(
+            onTapAccept: () {},
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const PostDetailPage(),
+              ),
+            ),
+          ),
         ),
+        itemCount: 10,
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
