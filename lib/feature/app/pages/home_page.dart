@@ -22,9 +22,9 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: ListView.builder(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.all(10),
         itemBuilder: (_, index) => Padding(
-          padding: const EdgeInsets.only(bottom: 14.0),
+          padding: const EdgeInsets.only(bottom: 10.0),
           child: PostItem(
             onTapAccept: () {},
             onTap: () => Navigator.of(context).push(

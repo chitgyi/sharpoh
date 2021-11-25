@@ -17,6 +17,14 @@ abstract class CustomThemes {
       ),
     ),
     primarySwatch: primarySwatch,
+    cardTheme: CardTheme(
+      color: Colors.white,
+      elevation: 10.0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+    ),
+    shadowColor: Colors.black.withOpacity(0.1),
     visualDensity: VisualDensity.adaptivePlatformDensity,
     backgroundColor: Colors.white,
     scaffoldBackgroundColor: const Color(0xFFF8F8F8),
@@ -67,6 +75,15 @@ abstract class CustomThemes {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     backgroundColor: const Color(0xFF313131),
     scaffoldBackgroundColor: const Color(0xFF212121),
+    cardTheme: CardTheme(
+      color: const Color(0xFF313131),
+      elevation: 10.0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+    ),
+    splashColor: Colors.black12,
+    shadowColor: Colors.black.withOpacity(0.1),
     appBarTheme: const AppBarTheme(
       titleTextStyle: TextStyle(
         fontSize: 20,
@@ -76,7 +93,7 @@ abstract class CustomThemes {
       color: Color(0xFF212121),
       systemOverlayStyle: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.light,
       ),
       elevation: 0,
       iconTheme: IconThemeData(color: Colors.white),

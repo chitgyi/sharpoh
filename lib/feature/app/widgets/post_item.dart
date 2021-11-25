@@ -11,15 +11,12 @@ class PostItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      elevation: 10.0,
-      shadowColor: Colors.black.withOpacity(0.1),
-      borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+    return Card(
       child: InkWell(
         onTap: onTap,
         borderRadius: const BorderRadius.all(Radius.circular(10.0)),
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(14.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
