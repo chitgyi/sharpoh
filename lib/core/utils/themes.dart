@@ -42,6 +42,7 @@ abstract class CustomThemes {
       elevation: 0,
       iconTheme: IconThemeData(color: Colors.black),
     ),
+    hoverColor: Colors.black12,
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       elevation: 0,
       backgroundColor: Colors.white,
@@ -82,7 +83,7 @@ abstract class CustomThemes {
         borderRadius: BorderRadius.circular(8),
       ),
     ),
-    splashColor: Colors.black12,
+    splashColor: Colors.lightBlue,
     shadowColor: Colors.black.withOpacity(0.1),
     appBarTheme: const AppBarTheme(
       titleTextStyle: TextStyle(
